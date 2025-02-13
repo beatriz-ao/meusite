@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <title>Contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #title{
+  flex-direction: colune;
+  line-height:10px;
+}
+h1{
+  font-weight: 200;
+  margin-left: 60px
+}
+main{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px
+}
+h2{
+  font-size: 56px;
+  font-weight: 200;
+  line-height: 10px;
+}
+h3{
+  font-weight: 200;
+  line-height: 10px;
+}
+span{
+  color: rgb(132,13,201)
+}
+p{
+  line-height: 20px;
+  max-width: 450px;
+  font-weight: 50;
+}
+a{
+  color: white;
+}
+a:hover{
+  color: rgb(132, 13, 201)
+}
+img{
+  margin-top: 100px;
+  margin-left: 80px
+}
+a{
+  margin:20px;
+  color: white;
+  margin-right: 40px
+}
+a:hover{
+  color: MediumOrchid;
+}
+aside{
+  margin-top: 60px;
+  margin-left: 180px;
+}
+h3{
+  margin-left: 180px;
+}
+footer{
+  margin-left: 180px;
+}
+button{
+    background-color: rgb(132, 13, 201);
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 8px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px
+}
+button:hover{
+    cursor: pointer;
+    color: MediumOrchid;
+}
+    </style>
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        const nome = document.getElementById('Nome').value;
+        const email = document.getElementById('email').value;
+        const whatsapp = document.getElementById('whatsapp').value;
+        const mensagem = document.getElementById('mensagem').value; // Added id for textarea
+        window.location.href = `process.html?nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&whatsapp=${encodeURIComponent(whatsapp)}&mensagem=${encodeURIComponent(mensagem)}`;
+      }
+    </script>
+  </head>
+  <body>
+   
+    <header>
+      <div id="title">
+        <h1>Formulário</h1>
+        <h1>de Contato</h1>
+      </div>
+      <nav>
+        <div id="link">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="portifolio.html">Portifólio</a>
+        </div>
+      </nav>
+    </header>
+
+
+    <main>
+      <aside>
+        <h2><span>Adicione suas</span></h2>
+        <h2>informações:</h2>
+        <p>Preencha corretamente o formulário com suas informações para manter-mos contato</p>
+
+
+        <form onsubmit="handleSubmit(event)">
+          <label>Nome</label>
+          <input type="text" name="Nome" id="Nome" placeholder="Seu nome" required><br>
+          <label>E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Seu e-mail" required><br>
+          <label>Whatsapp</label>
+          <input type="text" name="whatsapp" id="whatsapp" placeholder="Seu número de telefone" required><br>
+          <label>Mensagem</label>
+          <textarea id="mensagem" placeholder="Adicione alguma mensagem"></textarea><br>
+          <button type="submit">Enviar</button>
+        </form>
+      </aside>
+
+
+      <div class="img">
+        <img src="https://lh5.googleusercontent.com/pfok86Rnq-xjXX-winehahCybHzqHhXhe5ZAwTDUYQBzww1bVXW6AwGqF5oReZaDW1eOz2hP7d9ithjcAM6glJSycrbGrC8jDII_dhPfRUXRZAL6kcrgDkAathmnEieWPKzsKbIY" height="380" width="400">
+      </div>
+    </main>
+
+
+    <br>
+    <p><h3>Acesse minha rede social:</h3></p>
+    <a href="https://www.instagram.com/beatrizz.ao?igsh=czNtMXptNDVnZnI4" id="instagram">Instagram</a> <br>
+
+
+    <footer>
+      <br><p>&copy; 2025 Sara Oliveira. Todos os direitos reservados.</p>
+    </footer>
+
+
+  </body>
+</html>

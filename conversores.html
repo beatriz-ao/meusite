@@ -1,0 +1,71 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>conversores</title>
+    <style>
+        body{
+            margin-top:120px;
+        }
+        h1{
+            margin-left:70px;
+            font-weight: 200;
+        }
+        h3{
+            font-weight: 200;
+        }
+    </style>
+    <header>
+      <h1>Conversores</h1>
+    </header>
+</head>
+<body>
+    <h3>Conversor de temperatura</h3>
+    <script>
+        let celcius = parseInt(prompt("Digite a temperatura em graus celcius"))
+
+
+
+
+        let fahrenheit = 1.8*celcius + 32
+
+
+
+
+        document.write("A temperatura convertida a fahrenheit é: " + fahrenheit)
+   
+    </script>
+    <h3>Conversor de distância</h3>
+    <script>
+        let metros = parseInt(prompt("Digite a distância em metros"))
+
+
+
+
+        let centimetros = metros * 100
+
+
+
+
+        document.write("A distância convertida a centímetros é: " + centimetros)
+    </script>
+    <h3>Conversor de massa</h3>
+    <script>
+        let quilo = parseInt(prompt("Digite a massa em quilos"))
+
+
+
+
+        let libra = quilo * 2.20462
+
+
+
+
+        document.write("A massa convertida a libras é: " + libra)
+    </script>
+    <footer>
+        <br><p>&copy; 2025 Sara Oliveira. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

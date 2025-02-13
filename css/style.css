@@ -1,0 +1,65 @@
+/*CSS do site todo*/
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: fantasy;
+    max-width: 1200px;
+    margin: 10 auto;
+    padding: 15px;
+    margin-left: 150px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: Indigo;
+}
+
+/*CSS do index*/
+.title{
+    margin-left: 70px;
+}
+.link{
+    margin-right: 50px;
+}
+/*CSS do contato*/
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%
+}
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 13, 201);
+    color: white;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+input{
+    margin-top: 10px;
+    height: 8px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px
+}
+textarea{
+    margin-top: 10px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px
+}
+#instagram{
+    margin-left: 180px;
+}

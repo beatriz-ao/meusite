@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jogo de Adivinhação</title>
+    <style>
+        h2{
+            margin-left: 70px;
+            font-weight: 200;
+        }
+        h3{
+            font-weight: 200;
+        }
+        body{
+            margin-top: 100px
+        }
+        button{
+            background-color: rgb(132, 13, 201);
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 20px;
+            border: none;
+            font-size: 15px
+        }
+        button:hover{
+        cursor: pointer;
+        color: MediumOrchid;
+        }
+    </style>
+    <header>
+        <h2>Jogo de Adivinhação</h2>
+    </header>
+</head>
+<body>
+        <h3>Adivinhe um número entre 1 e 100!</h3>
+        <input type="number" id="guess" placeholder="Digite seu palpite" min="1" max="100">
+        <button onclick="verificarPalpite()">Tentar</button>
+        <p class="message" id="message"></p>
+
+    <script src="js/script4.js"></script>
+<footer>
+        <br><p>&copy; 2025 Sara Oliveira. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz interativo</title>
+    <style>
+        section{
+            margin-top:60px;
+        }
+        h1{
+            margin-left:70px;
+            font-weight: 200;
+        }
+        h2,h3{
+            font-weight: 200;
+        }
+        p,label{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            background-color: rgb(132, 13, 201);
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 20px;
+            border: none;
+            font-size: 15px
+        }
+        button:hover{
+        cursor: pointer;
+        color: MediumOrchid;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Quiz sobre MPB</h1>
+  </header>
+  <main class="container">
+    <p>Nesse quiz você pode ler um texto para ajudar nas respostas e responder 5 perguntas sobre o MPB. No fim do quiz irá ser mostrado quantas perguntas foram acertadas.</p>
+        <section>
+            <h2>Você conhece a história do MPB?</h2>
+            <p>A MPB (Música Popular Brasileira), surgiu na década de 60, durante a Ditadura Militar no Brasil, com a popularização da televisão e os programas dedicados à música que fizeram o maior sucesso nos festivais por todo o país. Como uma espécie de sucessão à Bossa Nova, a MPB misturou os ritmos desse gênero musical com os movimentos musicais dos Centros Populares de Cultura da União Nacional dos Estudantes e seu engajamento folclórico.</p>
+            <p>Os 10 principais compositores e intérpretes que influenciaram nesse movimento musical foram:<br>
+<br>1. Elis Regina<br>
+2. Milton Nascimento<br>
+3. Caetano Veloso<br>
+4. Maria Bethânia<br>
+5. Gal Costa<br>
+6. Gilberto Gil<br>
+7. Chico Buarque<br>
+8. Vinicius de Moraes<br>
+9. Geraldo Vandré<br>
+10. Djavan</p>
+        </section>
+       
+    </main>
+
+
+  <h3>Perguntas</h3>
+  <div class="quiz-container">
+      <div id="quiz">
+          <!-- Pergunta 1 -->
+          <div class="question">
+              <p>1. A MPB surgiu em qual década?</p>
+              <div class="options">
+                  <label><input type="radio" name="q1" value="a"> Década de 50</label><br>
+                  <label><input type="radio" name="q1" value="b"> Década de 60</label><br>
+                  <label><input type="radio" name="q1" value="c"> Década de 70</label><br>
+              </div>
+          </div>
+          <!-- Pergunta 2 -->
+          <div class="question">
+              <p>2. A MPB surgiu em qual momento histórico no Brasil?</p>
+              <div class="options">
+                  <label><input type="radio" name="q2" value="a"> República velha</label><br>
+                  <label><input type="radio" name="q2" value="b"> Estado novo</label><br>
+                  <label><input type="radio" name="q2" value="c"> Ditadura militar</label><br>
+              </div>
+          </div>
+          <!-- Pergunta 3 -->
+          <div class="question">
+              <p>3. A MPB sucedeu qual estilo musical?</p>
+              <div class="options">
+                  <label><input type="radio" name="q3" value="a"> Bossa nova</label><br>
+                  <label><input type="radio" name="q3" value="b"> Samba</label><br>
+                  <label><input type="radio" name="q3" value="c"> Sertanejo</label><br>
+                </div>
+            </div>
+            <!-- Pergunta 4 -->
+            <div class="question">
+                <p>4. Como a MPB se popularizou?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> Com os programas de rádio que transmitiam as músicas</label><br>
+                    <label><input type="radio" name="q4" value="b"> Com a popularização da televisão e os programas dedicados à música</label><br>
+                    <label><input type="radio" name="q4" value="c"> Com os festivais de música que davam visibilidade para novos artistas</label><br>
+                </div>
+            </div>
+            <!-- Pergunta 5 -->
+            <div class="question">
+                <p>5. Qual resposta mostra somente cantores de MPB?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> Maria Bethânia, Chico Buarque e Luan Santana</label><br>
+                    <label><input type="radio" name="q5" value="b"> Djavan, Elis Regina e Marília Mendoça</label><br>
+                    <label><input type="radio" name="q5" value="c"> Gal Costa, Caetano Veloso e Milton Nascimento</label><br>
+                </div>
+            </div><br>
+            <button onclick="calcularPontuacao()">Verificar Respostas</button>
+        </div>
+        <div class="result" id="resultado"></div>
+    </div>
+
+
+    <script src="js/script3.js"></script>
+    <footer>
+        <br><p>&copy; 2025 Sara Oliveira. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
